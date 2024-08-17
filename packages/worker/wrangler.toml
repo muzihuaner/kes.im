@@ -51,7 +51,7 @@ simple = {limit = 3, period = 10} # [limit, # of access per] [period, 10 or 60 (
 # -- ENV vars
 [env.prod.vars]
 ENV = "prod"
-DEBUG_MODE = true
+DEBUG_MODE = false
 CFG_SITE_ORIGIN = "https://zhiurl.cn"
 CFG_SITE_HOSTNAME = "zhiurl.cn"
 CFG_SITE_API_ORIGIN = "https://api.zhiurl.cn"
