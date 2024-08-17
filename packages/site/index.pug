@@ -14,9 +14,9 @@ block prepend scripts
 block content
   // Logo
   picture
-    source(srcset='/img/logo_en.svg' media='(prefers-color-scheme: light)')
-    source(srcset='/img/logo_en_dark.svg' media='(prefers-color-scheme: dark)')
-    img#logo.logo(src='/img/logo_en.svg')
+    source(srcset='https://gcore.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png' media='(prefers-color-scheme: light)')
+    source(srcset='https://gcore.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png' media='(prefers-color-scheme: dark)')
+    img#logo.logo(src='https://gcore.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png')
 
   // Input
   .link-input-wrapper
@@ -27,7 +27,7 @@ block content
 
   // Tag input
   .custom-tag-wrapper
-    strong kes.im/
+    strong zhiurl.cn/
     input#slugInput(tabindex='2')
 
   // Captcha
@@ -46,16 +46,16 @@ block content
 
   // About
   .about
-    | kes.im, ad-free no-log url shortener<br>
-    | developed by <a target='_blank' href='https://rames.dev'>rames</a>, designed by <a target='_blank' href='https://www.hellocihan.com'>cihan</a><br>
-    | works on top of <a rel='nofollow' target='_blank' href='https://workers.cloudflare.com/'>cloudflare workers</a><br>
-    | opensourced on <a rel='nofollow' target='_blank' href='https://github.com/ramesaliyev/kes.im'>github</a>
+    | 知链短链接
+    //- | developed by <a target='_blank' href='https://rames.dev'>rames</a>, designed by <a target='_blank' href='https://www.hellocihan.com'>cihan</a><br>
+    //- | works on top of <a rel='nofollow' target='_blank' href='https://workers.cloudflare.com/'>cloudflare workers</a><br>
+    //- | opensourced on <a rel='nofollow' target='_blank' href='https://github.com/ramesaliyev/kes.im'>github</a>
 
-  // Donation
-  .donation
-    script(type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js')
-    script(type='text/javascript').
-      kofiwidget2.init('Buy me a Beer', '#4779ff', 'E1E210QHEN');kofiwidget2.draw();
+  //- // Donation
+  //- .donation
+  //-   script(type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js')
+  //-   script(type='text/javascript').
+  //-     kofiwidget2.init('Buy me a Beer', '#4779ff', 'E1E210QHEN');kofiwidget2.draw();
 
   // Build info
   #buildInfo.build-info
