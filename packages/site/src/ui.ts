@@ -37,8 +37,8 @@ export default class AppUI {
     this.#DOM.urlInput.maxLength = maxURLLen;
 
     // Set the build meta.
-    const runId = BuildMeta.run.split('-')[0];
-    const build = BuildMeta.build;
+    // const runId = BuildMeta.run.split('-')[0];
+    // const build = BuildMeta.build;
     this.#DOM.buildInfo.innerHTML = `<br>知链短链接 X <a rel="nofollow" target="_blank" href="https://huangetech.github.io">欢哥科技</a>`;
 
   }
