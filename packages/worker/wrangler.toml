@@ -5,7 +5,7 @@ compatibility_date = "2024-07-22"
 compatibility_flags = ["nodejs_compat"]
 
 # -- Project configs
-account_id = "f6eb193c5ada002251ec96253583e74d"
+account_id = "6b6aeac19e4aad3f30b4e6acb7f10819"
 main = "src/entry.ts"
 workers_dev = false
 minify = true
@@ -27,18 +27,18 @@ name = "kesim"
 
 # -- Routes
 routes = [
-	{pattern="kes.im", custom_domain=true},
-	{pattern="api.kes.im", custom_domain=true},
+	{pattern="zhiurl.cn", custom_domain=true},
+	{pattern="api.zhiurl.cn", custom_domain=true},
 ]
 
 # -- KV Bindings
 kv_namespaces = [
-  {binding="KV_LINKS", id="767fc2258dd94aa09ddcacdac19b1e23"}
+  {binding="KV_LINKS", id="2a46e985924441fb94e4ab3200461cb6"}
 ]
 
 # -- D1 Bindings
 d1_databases = [
-  {binding="D1_LINKS", database_name="kesim", database_id="7356670a-5a76-414d-b8e0-92c30ed0f743" }
+  {binding="D1_LINKS", database_name="kesim", database_id="a5ccc301-5279-47a1-8559-0646b1965d95" }
 ]
 
 # -- Limiter Bindings
@@ -52,12 +52,12 @@ simple = {limit = 3, period = 10} # [limit, # of access per] [period, 10 or 60 (
 [env.prod.vars]
 ENV = "prod"
 DEBUG_MODE = true
-CFG_SITE_ORIGIN = "https://kes.im"
-CFG_SITE_HOSTNAME = "kes.im"
-CFG_SITE_API_ORIGIN = "https://api.kes.im"
-CFG_SITE_API_HOSTNAME = "api.kes.im"
-CFG_REDIR_ORIGIN = "https://kes.im"
-CFG_REDIR_HOSTNAME = "kes.im"
+CFG_SITE_ORIGIN = "https://zhiurl.cn"
+CFG_SITE_HOSTNAME = "zhiurl.cn"
+CFG_SITE_API_ORIGIN = "https://api.zhiurl.cn"
+CFG_SITE_API_HOSTNAME = "api.zhiurl.cn"
+CFG_REDIR_ORIGIN = "https://zhiurl.cn"
+CFG_REDIR_HOSTNAME = "zhiurl.cn"
 CFG_RANDOM_SLUG_LENGTH = 5
 CFG_MIN_SLUG_LENGTH = 3
 CFG_MAX_SLUG_LENGTH = 64
