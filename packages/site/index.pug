@@ -4,7 +4,7 @@ block vars
   - var mainClass = 'root';
 
 block title
-  | 缩短你的链接 | 知链 |zhiurl.cn
+  | Shorten your links | kes.im
 
 block prepend scripts
   if env.CF_TURNSTILE_ENABLED
@@ -14,9 +14,9 @@ block prepend scripts
 block content
   // Logo
   picture
-    source(srcset='https://testingcf.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png' media='(prefers-color-scheme: light)')
-    source(srcset='https://testingcf.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png' media='(prefers-color-scheme: dark)')
-    img#logo.logo(src='https://testingcf.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png')
+    source(srcset='/img/logo_en.svg' media='(prefers-color-scheme: light)')
+    source(srcset='/img/logo_en_dark.svg' media='(prefers-color-scheme: dark)')
+    img#logo.logo(src='/img/logo_en.svg')
 
   // Input
   .link-input-wrapper
@@ -27,7 +27,7 @@ block content
 
   // Tag input
   .custom-tag-wrapper
-    strong zhiurl.cn/
+    strong kes.im/
     input#slugInput(tabindex='2')
 
   // Captcha
@@ -44,7 +44,7 @@ block content
   .results-wrapper
     ul#results.results-list
 
-// About
+  // About
   .about
     | kes.im, ad-free no-log url shortener<br>
     | developed by <a target='_blank' href='https://rames.dev'>rames</a>, designed by <a target='_blank' href='https://www.hellocihan.com'>cihan</a><br>
