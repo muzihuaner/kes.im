@@ -79,6 +79,7 @@ describe('lib/verify', () => {
     it('should check if hostname is banned', async () => {
       const min = 10, max = 30;
       expect(isURLValidAndAllowed('https://kes.im', min, max)).toBe(false);
+      expect(isURLValidAndAllowed('https://zhiurl.cn', min, max)).toBe(false);
       expect(isURLValidAndAllowed('https://bitly.com', min, max)).toBe(false);
       expect(isURLValidAndAllowed('https://tinyurl.com', min, max)).toBe(false);
     });
