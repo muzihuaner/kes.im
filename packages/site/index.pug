@@ -4,7 +4,7 @@ block vars
   - var mainClass = 'root';
 
 block title
-  | Shorten your links | kes.im
+  | 缩短你的链接 | 知链 |zhiurl.cn
 
 block prepend scripts
   if env.CF_TURNSTILE_ENABLED
@@ -14,9 +14,9 @@ block prepend scripts
 block content
   // Logo
   picture
-    source(srcset='/img/logo_en.svg' media='(prefers-color-scheme: light)')
-    source(srcset='/img/logo_en_dark.svg' media='(prefers-color-scheme: dark)')
-    img#logo.logo(src='/img/logo_en.svg')
+    source(srcset='https://testingcf.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png' media='(prefers-color-scheme: light)')
+    source(srcset='https://testingcf.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png' media='(prefers-color-scheme: dark)')
+    img#logo.logo(src='https://testingcf.jsdelivr.net/gh/muzihuaner/huancdn@main/img/zhiurllogo.png')
 
   // Input
   .link-input-wrapper
@@ -27,14 +27,14 @@ block content
 
   // Tag input
   .custom-tag-wrapper
-    strong kes.im/
+    strong zhiurl.cn/
     input#slugInput(tabindex='2')
 
   // Captcha
   .captcha
     if env.CF_TURNSTILE_ENABLED
       .cf-turnstile(
-        data-sitekey='0x4AAAAAAAfcjB2aIe7Uas6w'
+        data-sitekey='0x4AAAAAAA8n9Ap_1-I_4BQu'
         data-theme='auto'
         data-callback='onTokenSuccess'
         data-expired-callback='onTokenExpired'
@@ -44,18 +44,20 @@ block content
   .results-wrapper
     ul#results.results-list
 
-  // About
+// About
   .about
-    | kes.im, ad-free no-log url shortener<br>
-    | developed by <a target='_blank' href='https://rames.dev'>rames</a>, designed by <a target='_blank' href='https://www.hellocihan.com'>cihan</a><br>
-    | works on top of <a rel='nofollow' target='_blank' href='https://workers.cloudflare.com/'>cloudflare workers</a><br>
-    | opensourced on <a rel='nofollow' target='_blank' href='https://github.com/ramesaliyev/kes.im'>github</a>
+    | 知链短链接 X 欢哥科技 <br>
+    |本站禁止违法违规内容的网站生成短链接，如有发现立刻封停！为了防止滥用，故所有由知链短链生成的链接将会不定期清理。<br><br>
+    <a href="https://pay.quickso.cn" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 145px !important;"></a>   
+    //- | developed by <a target='_blank' href='https://rames.dev'>rames</a>, designed by <a target='_blank' href='https://www.hellocihan.com'>cihan</a><br>
+    //- | works on top of <a rel='nofollow' target='_blank' href='https://workers.cloudflare.com/'>cloudflare workers</a><br>
+    //- | opensourced on <a rel='nofollow' target='_blank' href='https://github.com/ramesaliyev/kes.im'>github</a>
 
   // Donation
   .donation
-    script(type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js')
-    script(type='text/javascript').
-      kofiwidget2.init('Buy me a Beer', '#4779ff', 'E1E210QHEN');kofiwidget2.draw();
+    //- script(type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js')
+    //- script(type='text/javascript').
+    //-   kofiwidget2.init('Buy me a Beer', '#4779ff', 'E1E210QHEN');kofiwidget2.draw();
 
   // Build info
   #buildInfo.build-info
