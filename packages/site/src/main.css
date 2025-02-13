@@ -376,7 +376,10 @@ body.in-progress .cut-button .loader {
     padding-top: 30px;
   }
 
+
   .logo {
+    width: 126.5px;
+    height: 60.5px;
     margin-bottom: 30px;
   }
 

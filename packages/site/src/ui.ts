@@ -39,7 +39,7 @@ export default class AppUI {
     // Set the build meta.
     const runId = BuildMeta.run.split('-')[0];
     const build = BuildMeta.build;
-    this.#DOM.buildInfo.innerHTML = `<a rel="nofollow" target="_blank" href="https://github.com/ramesaliyev/kes.im/actions/runs/${runId}">
+    this.#DOM.buildInfo.innerHTML = `<a rel="nofollow" target="_blank" href="https://github.com/muzihuaner/${runId}">
       v${BuildMeta.version}.${build}
     </a>`;
 
