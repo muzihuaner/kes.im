@@ -70,6 +70,7 @@ CFG_REDIRECT_CACHE_AGE = 31536000 # a year
 CF_STATIC_ASSET_TTL = 172800 # 2 days
 CF_KV_CACHE_TTL = 86400 # a day
 CF_TURNSTILE_ENABLED = true
+TURNSTILE_SECRET="0x4AAAAAAA8n9MrCMQZvXmVH0jTU8j8ILY8"
 CF_TURNSTILE_VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify"
 
 ####################################################################################################
